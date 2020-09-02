@@ -1,3 +1,6 @@
+'''Creating basic rabbitmq methods for an application'''
+
+
 import pika
 
 

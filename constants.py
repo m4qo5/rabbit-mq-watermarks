@@ -1,8 +1,8 @@
 LOCALHOST = 'localhost'
-PILLOW_FONT = ('Pillow/Tests/fonts/FreeMono.ttf', 40)
-WATERMARKS_QUEUE = 'watermarks'
-INPUT_IMAGE = './images/image.jpg'
-OUTPUT_IMAGE = './watermarks/image.jpg'
+PILLOW_FONT = ('Pillow/Tests/fonts/FreeMono.ttf', 40)  # watermark font
+WATERMARKS_QUEUE = 'watermarks'  # queue name
+INPUT_IMAGE = './images/image.jpg'  # default image path
+OUTPUT_IMAGE = './watermarks/image.jpg'  # default destination image path
 
 MESSAGE_EXAMPLE = {
     'input_image_path' : INPUT_IMAGE,
