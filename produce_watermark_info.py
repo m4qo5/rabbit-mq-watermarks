@@ -12,7 +12,7 @@ def setup_rabbit():
     return connection, channel
 
 
-def produce_message(channel, exchange):
+def produce_message(channel, exchange=''):
     publish_watermarks(
         channel=channel, exchange=exchange,  # publishing a message to the queue
         routing_key=WATERMARKS_QUEUE,
@@ -23,5 +23,5 @@ def produce_message(channel, exchange):
 if __name__ == '__main__':
     connection, channel = setup_rabbit()
     print(" [x] Connection to RabbitMQ established. You can save messages now")
-    produce_message(channel, '')  # producing a message to the queue using default exchange
+    produce_message(channel)  # producing a message to the queue using default exchange
     print(" [x] Message with info about image has been produced")
